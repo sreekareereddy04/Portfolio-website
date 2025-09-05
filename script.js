@@ -54,9 +54,11 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 // Initializing Typed.js library
 const typed = new Typed('.multiple-text', {
-    strings: ['CSAI Sophomore at IIITD', 'Developer'],
+    strings: ['Frontend-Developer', 'Problem-Solver', 'Creative Coder',],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
 });
+// Auto-update the year
+document.getElementById("year").textContent = new Date().getFullYear();
